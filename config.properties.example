@@ -1,0 +1,60 @@
+# This is the configuration file for the CoffeBot IRC Bot
+# CoffeeBot.ircserver = irc.freenode.org
+#CoffeeBot.ircserver = irc.quakenet.org
+#CoffeeBot.ircport = 6667
+CoffeeBot.ircserver = irc.ethz.ch
+CoffeeBot.ircport = 6667
+CoffeeBot.quitmsg = Bye bye...
+CoffeeBot.nick = CoffeeBot
+CoffeeBot.user = gannimo
+CoffeeBot.realname = CoffeeBot
+CoffeeBot.password = PASSWORD
+CoffeeBot.nickserv = NickServ
+CoffeeBot.nickservCommand = identify SECRETPASSWORD
+# CoffeeBot.channel = albtraum
+CoffeeBot.channel = infochat
+CoffeeBot.logLevel = 9
+CoffeeBot.plugins = echo, dice, countdown, quote, request, wikipedia, mensa, eliza, terrorist, list, uptime, markoff
+
+CoffeeBot.plugin.echo.command = !echo
+CoffeeBot.plugin.echo.class = net.nebelwelt.CoffeeBot.plugins.Echo
+
+CoffeeBot.plugin.dice.command = !dice
+CoffeeBot.plugin.dice.class = net.nebelwelt.CoffeeBot.plugins.Dice
+
+CoffeeBot.plugin.countdown.command = !countdown
+CoffeeBot.plugin.countdown.class = net.nebelwelt.CoffeeBot.plugins.Countdown
+CoffeeBot.plugin.countdown.date = 2008-12-27 11:00:00
+CoffeeBot.plugin.countdown.message = 25c3 starts - http://www.ccc.de/congress
+
+CoffeeBot.plugin.uptime.command = !uptime
+CoffeeBot.plugin.uptime.class = net.nebelwelt.CoffeeBot.plugins.Uptime
+
+CoffeeBot.plugin.quote.command = !quote
+CoffeeBot.plugin.quote.class = net.nebelwelt.CoffeeBot.plugins.Quote
+CoffeeBot.plugin.quote.file = quotes.txt
+
+CoffeeBot.plugin.request.command = !request
+CoffeeBot.plugin.request.class = net.nebelwelt.CoffeeBot.plugins.Request
+
+CoffeeBot.plugin.wikipedia.command = !wikipedia
+CoffeeBot.plugin.wikipedia.class = net.nebelwelt.CoffeeBot.plugins.Wikipedia
+CoffeeBot.plugin.wikipedia.baseurl = http://en.wikipedia.org/wiki/
+CoffeeBot.plugin.wikipedia.en.baseurl = http://en.wikipedia.org/wiki/
+CoffeeBot.plugin.wikipedia.de.baseurl = http://de.wikipedia.org/wiki/
+
+CoffeeBot.plugin.mensa.command = !mensa
+CoffeeBot.plugin.mensa.class = net.nebelwelt.CoffeeBot.plugins.Mensa
+
+CoffeeBot.plugin.eliza.command = !eliza
+CoffeeBot.plugin.eliza.class = net.nebelwelt.CoffeeBot.plugins.ElizaPlugin
+
+CoffeeBot.plugin.terrorist.command = !terrorist
+CoffeeBot.plugin.terrorist.class = net.nebelwelt.CoffeeBot.plugins.Terrorist
+
+CoffeeBot.plugin.list.command = !list
+CoffeeBot.plugin.list.class = net.nebelwelt.CoffeeBot.plugins.List
+
+CoffeeBot.plugin.markoff.command = !speak
+CoffeeBot.plugin.markoff.brain = brain.txt
+CoffeeBot.plugin.markoff.class = net.nebelwelt.CoffeeBot.plugins.MarkoffPlugin
